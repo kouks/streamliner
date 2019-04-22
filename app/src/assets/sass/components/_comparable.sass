@@ -1,0 +1,43 @@
+
+.comparable
+  border-right: 1px solid $white-ter
+
+  .comparable-title
+    display: block
+    overflow: hidden
+    text-overflow: ellipsis
+    text-transform: capitalize
+    white-space: nowrap
+    padding: 0.75rem 1rem
+    background: $white-bis
+    border-bottom: 1px solid $white-ter
+
+  .comparable-image
+
+    img
+      width: auto
+      height: 100%
+      margin: 0 auto
+
+  .comparable-content
+    background: $white-ter
+    padding: 0.5rem 1rem
+
+  .comparable-list
+    li
+      padding: 0.5rem 1.25rem
+      border-bottom: 1px solid $white-ter
+      color: $grey
+
+      &.is-success
+        background: lighten($success, 30%)
+
+      &.is-danger
+        background: lighten($danger, 30%)
+
+  .comparable-score
+    padding: 0.75rem 1rem
+
+  .comparable-footer
+    background: $white-bis
+    padding: 0.75rem 1rem

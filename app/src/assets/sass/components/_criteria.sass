@@ -1,0 +1,42 @@
+
+.criteria
+  li
+    +block
+
+    .criterion
+      .criterion-title
+        align-items: center
+        background: $white-bis
+        border-radius: 10000px
+        display: flex
+        height: 3.25rem
+        justify-content: space-between
+        padding: 0.5rem 1.5rem
+        user-select: none
+        width: 100%
+
+        .select
+          display: none
+
+        &:hover
+          background: $white-ter
+          cursor: pointer
+
+      .criterion-body
+        border-bottom: 3px solid $white-ter
+        display: none
+        margin: 1.5rem 1.5rem 0
+        padding-bottom: 1.5rem
+        justify-content: center
+        align-content: center
+
+      &.is-active
+        > .criterion-title
+          background: $primary
+          color: white
+
+          .select
+            display: inline-block
+
+        > .criterion-body
+          display: block

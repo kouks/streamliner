@@ -1,0 +1,27 @@
+{
+  "name": "streamliner-scraper",
+  "version": "1.0.0",
+  "description": "Listens for SQS messages and scrapes amazon products.",
+  "main": "dist/main.js",
+  "repository": "github:kouks/streamliner-scraper",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavel Koch <kouks.koch@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/crypto-js": "^3.1.43",
+    "@types/dotenv": "^6.1.0",
+    "@types/xml2js": "^0.4.3",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@bausano/sqs-consumer": "1.0.7",
+    "awi": "0.0.10",
+    "aws-sdk": "^2.424.0",
+    "crypto-js": "^3.1.9-1",
+    "dotenv": "^7.0.0",
+    "xml2js": "^0.4.19"
+  }
+}

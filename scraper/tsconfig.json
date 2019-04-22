@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "declaration": true,
+    "declarationDir": "types",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["dom", "es6"],
+    "module": "commonjs",
+    "outDir": "dist",
+    "removeComments": false,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6",
+    "paths": {
+      "@/*": ["*"],
+      "@": ["index.ts"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
